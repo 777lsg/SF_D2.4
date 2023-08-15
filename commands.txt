@@ -1,0 +1,10 @@
+minikube status -p lsg-group
+
+minikube start --nodes 5 -p lsg-group
+
+minikube profiles list
+
+minikube stop -p lsg-group
+minikube delete -p lsg-group
+
+minikube kubectl -- get pods -A
